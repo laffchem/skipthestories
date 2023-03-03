@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "skipthestories"
+version = "0.1.0"
+description = ""
+authors = ["John Laffey <laffeychem@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.1.7"
+django-allauth = "^0.52.0"
+crispy-bootstrap5 = "^0.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

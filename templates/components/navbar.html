@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container">
+        <a class="navbar-brand logo pe-5" href="#">Skip The Stories</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Ingredients
+                    </a>
+                    {# For loop here later #}
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Chicken</a></li>
+                        <li><a class="dropdown-item" href="#">Beef</a></li>
+                        <li><a class="dropdown-item" href="#">Fish</a></li>
+                        <li><a class="dropdown-item" href="#">Vegan</a></li>
+                        <li><a class="dropdown-item" href="#">Vegitarian</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Surprise me!</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Time of Day
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                        <li><a class="dropdown-item" href="#">Lunch</a></li>
+                        <li><a class="dropdown-item" href="#">Dinner</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Cooking Methods
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Instant Pot</a></li>
+                        <li><a class="dropdown-item" href="#">Air Fryer</a></li>
+                        <li><a class="dropdown-item" href="#">Oven</a></li>
+                        <li><a class="dropdown-item" href="#">Stove</a></li>
+                        <li><a class="dropdown-item" href="#">Skillet</a></li>
+                    </ul>
+                </li>
+                                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Account
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Register</a></li>
+                        <li><a class="dropdown-item" href="#">Login</a></li>
+                        {% if user.is_authenticated %}
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        {% endif %}
+                    </ul>
+                </li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            </ul>
+            <form class="d-flex" role="search">
+                {% csrf_token %}
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary btn-color" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>

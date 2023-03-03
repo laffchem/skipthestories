@@ -1,0 +1,14 @@
+{
+  "name": "skipthestories",
+  "version": "1.0.0",
+  "description": "Htmx package for my django app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "htmx.org": "^1.8.6"
+  }
+}
