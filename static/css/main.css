@@ -12,6 +12,49 @@ body {
     letter-spacing: -1.2px;
 }
 
+/* link styling */
+.login-link {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s;
+}
+
+.login-link:hover,
+.login-link:active,
+.login-link:focus {
+    color: #fd7e14;
+}
+
+/* Navbar Animations */
+.navbar-brand {
+    transition: all 0.2s;
+}
+
+.navbar-brand:hover,
+.navbar-brand:active,
+.navbar-brand:focus {
+    color: #fd7e14 !important;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+    color: #fd7e14 !important;
+}
+
+.dropdown-menu .dropdown-item {
+    transition: all 0.1s;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:focus {
+    background-color: #ffa94d !important;
+    color: #333;
+}
+
+
+
 .splash-img {
     width: 100%;
 }
@@ -22,6 +65,8 @@ body {
     border-color: #fd7e14 !important;
 }
 
+
+/* Pagination */
 .btn-color:hover,
 .btn-color:active,
 .pagination a:hover,

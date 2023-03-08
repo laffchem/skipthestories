@@ -1,0 +1,43 @@
+<div
+  class="modal fade"
+  id="registerModal"
+  tabindex="-1"
+  aria-labeel="registerModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerModalLabel">Register</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" />
+          </div>
+          <button class="btn btn-outline-secondary btn-color" type="submit">
+            Create Account
+          </button>
+          <hr>
+          <p class="text-center">Or sign in with</p>
+          <div class="mb-2 text-center">
+            <a class="btn btn-outline-secondary btn-color d-inline-block mx-2">Google <i class="fa-brands fa-google"></i></a>
+            <a class="btn btn-outline-secondary btn-color d-inline-block mx-2">Apple <i class="fa-brands fa-apple"></i></a>
+            <a class="btn btn-outline-secondary btn-color d-inline-block mx-2">Github <i class="fa-brands fa-github"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
